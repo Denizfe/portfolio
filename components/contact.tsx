@@ -35,6 +35,9 @@ export function Contact() {
         {
           from_name: name,
           from_email: email,
+          to_name: "Deniz Efe Karacakaya",
+          to_email: profile.email,
+          reply_to: email,
           message: message,
         },
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!

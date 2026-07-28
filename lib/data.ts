@@ -5,7 +5,7 @@ export const profile = {
   education: "Akdeniz University — Artificial Intelligence & Data Engineering",
   headline:
     "Building AI-powered applications, cloud-native systems, and intelligent software for real-world impact.",
-  email: "denizefekaracakaya@gmail.com",
+  email: "denizefekaracakaya14@gmail.com",
   github: "https://github.com/Denizfe",
   linkedin: "https://linkedin.com/in/denizefekaracakaya",
   kaggle: "https://kaggle.com/denizefekaracakaya",
