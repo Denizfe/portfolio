@@ -79,12 +79,12 @@ export type Project = {
 
 export const projects: Project[] = [
   {
-    slug: "chronos",
-    name: "Chronos",
+    slug: "forecast",
+    name: "Forecast",
     summary:
-      "A time-series forecasting platform that turns raw market and sensor data into actionable predictions with an interactive Streamlit interface.",
-    stack: ["Python", "Prophet", "Streamlit", "Docker"],
-    github: "https://github.com/Denizfe/chronos",
+      "A forecasting platform leveraging time-series models and analytics for predictive insights.",
+    stack: ["Python", "Machine Learning", "Data Analysis"],
+    github: "https://github.com/Denizfe/forecast.git",
     featured: true,
   },
   {
@@ -93,7 +93,7 @@ export const projects: Project[] = [
     summary:
       "A computer-vision workout companion that tracks form and reps in real time using pose estimation, giving instant feedback during training.",
     stack: ["Python", "OpenCV", "PyTorch", "FastAPI"],
-    github: "https://github.com/Denizfe/gym-buddy-ai",
+    github: "https://github.com/Denizfe/gym-buddy-v2.git",
     featured: true,
   },
   {
@@ -106,12 +106,12 @@ export const projects: Project[] = [
     featured: true,
   },
   {
-    slug: "forest-fire-analysis",
-    name: "Forest Fire Analysis",
+    slug: "candymatch",
+    name: "Candymatch",
     summary:
-      "A geospatial risk-modeling pipeline that maps forest fire spread probability using satellite imagery and climate data.",
-    stack: ["Python", "GeoPandas", "Leafmap", "Scikit-Learn"],
-    github: "https://github.com/Denizfe/forest-fire-analysis",
+      "An interactive matching game demonstrating state management, game logic, and responsive frontend design.",
+    stack: ["JavaScript", "Frontend", "Game Logic"],
+    github: "https://github.com/Denizfe/candymatch.git",
     featured: true,
   },
   {
@@ -138,6 +138,7 @@ export const projects: Project[] = [
     summary:
       "An intelligent system built with LangChain that coordinates multiple autonomous AI agents to collaboratively solve complex reasoning tasks.",
     stack: ["Python", "LangChain", "LLMs", "Multi-Agent"],
+    github: "https://github.com/Denizfe/langchain-multiagent-project.git",
     featured: true,
   },
 ];
@@ -196,12 +197,12 @@ export const certificates = [
     type: "pdf"
   },
   {
-    name: "ML Sınav 3 (Kolaylaştırıcı)",
+    name: "Yapay Zeka ve Makine Öğrenmesi",
     file: "/certificates/ml-sınav3.pdf.png",
     type: "image"
   },
   {
-    name: "Kolaylaştırıcı",
+    name: "Yapay Zeka ve Kolaylaştırıcı Araçlar",
     file: "/certificates/Kolaylaştırıcı-3.pdf.png",
     type: "image"
   },
