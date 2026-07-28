@@ -14,7 +14,8 @@ export function Contact() {
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    const form = new FormData(e.currentTarget);
+    const formElement = e.currentTarget;
+    const form = new FormData(formElement);
     const name = String(form.get("name") || "").trim();
     const email = String(form.get("email") || "").trim();
     const message = String(form.get("message") || "").trim();
@@ -43,7 +44,7 @@ export function Contact() {
         process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
       );
       setStatus("success");
-      e.currentTarget.reset();
+      formElement.reset();
     } catch (error) {
       console.error(error);
       setStatus("error");
