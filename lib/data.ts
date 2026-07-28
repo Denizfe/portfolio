@@ -16,6 +16,7 @@ export const nav = [
   { label: "Projects", href: "#projects" },
   { label: "Experience", href: "#experience" },
   { label: "Skills", href: "#skills" },
+  { label: "Certificates", href: "#certificates" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -25,11 +26,13 @@ export const skillGroups = [
     items: ["Python", "Java", "TypeScript", "JavaScript", "SQL", "Bash"],
   },
   {
-    category: "Machine Learning",
+    category: "Machine Learning & AI",
     items: [
+      "LangChain",
       "PyTorch",
       "TensorFlow",
       "Scikit-Learn",
+      "MLflow",
       "Pandas",
       "NumPy",
       "OpenCV",
@@ -115,9 +118,26 @@ export const projects: Project[] = [
     slug: "local-flow-mlops",
     name: "Local Flow MLOps",
     summary:
-      "A self-hosted MLOps platform on K3s with MinIO object storage and Sealed Secrets, built to run a full model lifecycle entirely on local hardware.",
-    stack: ["Kubernetes", "K3s", "MinIO", "Helm", "Argo CD"],
+      "End-to-end local MLOps architecture designed for hardware-constrained environments. Integrates CPU offloading for large-scale training, MinIO-backed MLflow tracking, and strict declarative GitOps automation on K8s.",
+    stack: ["Kubernetes", "K3s", "Docker", "MinIO", "Helm", "Argo CD", "MLflow"],
     github: "https://github.com/Denizfe/local-flow-mlops",
+    featured: true,
+  },
+  {
+    slug: "dsa-oop-assistant",
+    name: "DSA & OOP Assistant",
+    summary:
+      "A comprehensive Java assistant focused on applying Data Structures, Algorithms, and Object-Oriented Programming principles effectively.",
+    stack: ["Java", "OOP", "Data Structures", "Algorithms"],
+    github: "https://github.com/Denizfe/DSA-OOP-Assistant",
+    featured: true,
+  },
+  {
+    slug: "langchain-multi-agent",
+    name: "LangChain Multi-Agent",
+    summary:
+      "An intelligent system built with LangChain that coordinates multiple autonomous AI agents to collaboratively solve complex reasoning tasks.",
+    stack: ["Python", "LangChain", "LLMs", "Multi-Agent"],
     featured: true,
   },
 ];
@@ -157,4 +177,42 @@ export const currentFocus = [
   "Kubernetes & Helm charts",
   "Federated learning systems",
   "Time-series forecasting",
+];
+
+export const certificates = [
+  {
+    name: "Python Programlama Dili",
+    file: "/certificates/Python_Programlama_Dili_Sertifika.pdf",
+    type: "pdf"
+  },
+  {
+    name: "Python ile Makine Öğrenmesi Uygulamaları",
+    file: "/certificates/Python_ile_Makine_Öğrenmesi_Uygulamaları_Sertifika.pdf",
+    type: "pdf"
+  },
+  {
+    name: "Yapay Zeka Atölyesi",
+    file: "/certificates/Yapay_Zeka_Atölyesi_Sertifika.pdf",
+    type: "pdf"
+  },
+  {
+    name: "ML Sınav 3 (Kolaylaştırıcı)",
+    file: "/certificates/ml-sınav3.pdf.png",
+    type: "image"
+  },
+  {
+    name: "Kolaylaştırıcı",
+    file: "/certificates/Kolaylaştırıcı-3.pdf.png",
+    type: "image"
+  },
+  {
+    name: "Runtalya",
+    file: "/certificates/runtalya.jpg",
+    type: "image"
+  },
+  {
+    name: "Sosyal Etkinlik",
+    file: "/certificates/sosyaletkinlik.jpg",
+    type: "image"
+  },
 ];

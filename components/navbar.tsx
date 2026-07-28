@@ -70,7 +70,9 @@ export function Navbar() {
             </button>
           )}
           <a
-            href="/Deniz-Efe-Karacakaya-CV.pdf"
+            href="/DenizEfeKaracakaya_Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="hidden rounded-full border border-white/10 px-4 py-1.5 text-sm text-ink transition-colors hover:border-primary/50 hover:text-primary sm:block"
           >
             Resume

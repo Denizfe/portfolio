@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin, Mail, Send } from "lucide-react";
+import emailjs from "@emailjs/browser";
 import { profile } from "@/lib/data";
 
 type Status = "idle" | "submitting" | "success" | "error";
@@ -28,11 +29,20 @@ export function Contact() {
 
     setStatus("submitting");
     try {
-      // Wire this up to an API route, form service, or email provider.
-      await new Promise((resolve) => setTimeout(resolve, 900));
+      await emailjs.send(
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID!,
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID!,
+        {
+          from_name: name,
+          from_email: email,
+          message: message,
+        },
+        process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY!
+      );
       setStatus("success");
       e.currentTarget.reset();
-    } catch {
+    } catch (error) {
+      console.error(error);
       setStatus("error");
     }
   }

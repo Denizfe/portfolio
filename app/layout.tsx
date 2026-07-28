@@ -38,6 +38,10 @@ export const metadata: Metadata = {
     "Data Engineering",
     "MLOps",
     "Portfolio",
+    "Java",
+    "LangChain",
+    "GitOps",
+    "Kubernetes"
   ],
   authors: [{ name: "Deniz Efe Karacakaya" }],
   openGraph: {
