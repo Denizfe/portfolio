@@ -21,7 +21,7 @@ export function Experience() {
         </h2>
       </motion.div>
 
-      <div className="relative border-l border-white/10 pl-8">
+      <div className="relative border-l border-ink/10 pl-8">
         {experience.map((item, i) => (
           <motion.div
             key={item.title}

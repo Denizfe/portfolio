@@ -6,6 +6,25 @@
   --font-display: "Space Grotesk", sans-serif;
   --font-sans: "Inter", sans-serif;
   --font-mono: "JetBrains Mono", monospace;
+
+  /* Light theme (default) */
+  --color-canvas: 248 250 252; /* #F8FAFC */
+  --color-surface: 255 255 255; /* #FFFFFF */
+  --color-ink: 15 23 42; /* #0F172A */
+  --color-muted: 71 85 105; /* #475569 — darker than dark-mode muted for AA contrast on white */
+  --color-primary: 8 145 178; /* #0891B2 — darker cyan for AA contrast on white */
+  --color-secondary: 124 58 237; /* #7C3AED */
+  --color-accent: 5 150 105; /* #059669 — darker emerald for AA contrast on white */
+}
+
+.dark {
+  --color-canvas: 3 7 18; /* #030712 */
+  --color-surface: 15 23 42; /* #0F172A */
+  --color-ink: 248 250 252; /* #F8FAFC */
+  --color-muted: 148 163 184; /* #94A3B8 */
+  --color-primary: 34 211 238; /* #22D3EE */
+  --color-secondary: 124 58 237; /* #7C3AED */
+  --color-accent: 16 185 129; /* #10B981 */
 }
 
 * {
@@ -22,14 +41,12 @@
 }
 
 body {
-  background-color: #030712;
-  color: #f8fafc;
   font-feature-settings: "cv02", "cv03", "cv04", "cv11";
 }
 
 ::selection {
-  background: rgba(34, 211, 238, 0.3);
-  color: #f8fafc;
+  background: rgb(var(--color-primary) / 0.3);
+  color: rgb(var(--color-ink));
 }
 
 /* Custom scrollbar */
@@ -37,10 +54,10 @@ body {
   width: 10px;
 }
 ::-webkit-scrollbar-track {
-  background: #030712;
+  background: rgb(var(--color-canvas));
 }
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(180deg, #22d3ee, #7c3aed);
+  background: linear-gradient(180deg, rgb(var(--color-primary)), rgb(var(--color-secondary)));
   border-radius: 999px;
 }
 
@@ -49,13 +66,19 @@ a:focus-visible,
 button:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-  outline: 2px solid #22d3ee;
+  outline: 2px solid rgb(var(--color-primary));
   outline-offset: 3px;
   border-radius: 4px;
 }
 
 .text-gradient {
-  background: linear-gradient(90deg, #22d3ee, #7c3aed, #10b981, #22d3ee);
+  background: linear-gradient(
+    90deg,
+    rgb(var(--color-primary)),
+    rgb(var(--color-secondary)),
+    rgb(var(--color-accent)),
+    rgb(var(--color-primary))
+  );
   background-size: 300% auto;
   -webkit-background-clip: text;
   background-clip: text;
@@ -63,10 +86,10 @@ textarea:focus-visible {
 }
 
 .glass {
-  background: rgba(15, 23, 42, 0.55);
+  background: rgb(var(--color-surface) / 0.55);
   backdrop-filter: blur(16px);
   -webkit-backdrop-filter: blur(16px);
-  border: 1px solid rgba(148, 163, 184, 0.12);
+  border: 1px solid rgb(var(--color-ink) / 0.12);
 }
 
 .grid-bg {

@@ -56,7 +56,7 @@ export function Certificates() {
                   loading="lazy"
                 />
               ) : (
-                <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4 opacity-90 transition-opacity group-hover:opacity-100 bg-white/5 flex items-center justify-center">
+                <div className="relative w-full h-48 rounded-lg overflow-hidden mb-4 opacity-90 transition-opacity group-hover:opacity-100 bg-ink/5 flex items-center justify-center">
                   {/* PDF Preview via Embed */}
                   <embed 
                     src={`${cert.file}#toolbar=0&navpanes=0&scrollbar=0`} 
@@ -105,7 +105,7 @@ export function Certificates() {
                 <img
                   src={cert.file}
                   alt={cert.name}
-                  className="w-full h-auto aspect-square sm:aspect-[4/3] rounded-lg object-contain bg-white/5 mb-4 opacity-90 transition-opacity group-hover:opacity-100"
+                  className="w-full h-auto aspect-square sm:aspect-[4/3] rounded-lg object-contain bg-ink/5 mb-4 opacity-90 transition-opacity group-hover:opacity-100"
                   loading="lazy"
                 />
               </div>

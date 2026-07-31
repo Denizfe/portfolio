@@ -44,7 +44,7 @@ export function Terminal() {
 
   return (
     <div className="glass w-full max-w-md rounded-xl font-mono text-[13px] shadow-2xl shadow-primary/5">
-      <div className="flex items-center gap-1.5 border-b border-white/10 px-4 py-3">
+      <div className="flex items-center gap-1.5 border-b border-ink/10 px-4 py-3">
         <span className="h-3 w-3 rounded-full bg-[#FF5F56]" />
         <span className="h-3 w-3 rounded-full bg-[#FFBD2E]" />
         <span className="h-3 w-3 rounded-full bg-[#27C93F]" />

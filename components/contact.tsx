@@ -102,7 +102,7 @@ export function Contact() {
               <input
                 name="name"
                 placeholder="Your name"
-                className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-ink placeholder:text-muted focus:border-primary/50"
+                className="w-full rounded-xl border border-ink/10 bg-ink/[0.03] px-4 py-2.5 text-sm text-ink placeholder:text-muted focus:border-primary/50"
                 aria-invalid={Boolean(errors.name)}
                 aria-describedby={errors.name ? "name-error" : undefined}
               />
@@ -117,7 +117,7 @@ export function Contact() {
                 name="email"
                 type="email"
                 placeholder="Your email"
-                className="w-full rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-ink placeholder:text-muted focus:border-primary/50"
+                className="w-full rounded-xl border border-ink/10 bg-ink/[0.03] px-4 py-2.5 text-sm text-ink placeholder:text-muted focus:border-primary/50"
                 aria-invalid={Boolean(errors.email)}
                 aria-describedby={errors.email ? "email-error" : undefined}
               />
@@ -132,7 +132,7 @@ export function Contact() {
                 name="message"
                 rows={4}
                 placeholder="What are you building?"
-                className="w-full resize-none rounded-xl border border-white/10 bg-white/[0.03] px-4 py-2.5 text-sm text-ink placeholder:text-muted focus:border-primary/50"
+                className="w-full resize-none rounded-xl border border-ink/10 bg-ink/[0.03] px-4 py-2.5 text-sm text-ink placeholder:text-muted focus:border-primary/50"
                 aria-invalid={Boolean(errors.message)}
                 aria-describedby={errors.message ? "message-error" : undefined}
               />
