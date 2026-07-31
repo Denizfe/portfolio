@@ -10,14 +10,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        primary: "#22D3EE",
-        secondary: "#7C3AED",
-        accent: "#10B981",
-        canvas: "#030712",
-        surface: "#0F172A",
+        primary: "rgb(var(--color-primary) / <alpha-value>)",
+        secondary: "rgb(var(--color-secondary) / <alpha-value>)",
+        accent: "rgb(var(--color-accent) / <alpha-value>)",
+        canvas: "rgb(var(--color-canvas) / <alpha-value>)",
+        surface: "rgb(var(--color-surface) / <alpha-value>)",
         light: "#FFFFFF",
-        ink: "#F8FAFC",
-        muted: "#94A3B8",
+        ink: "rgb(var(--color-ink) / <alpha-value>)",
+        muted: "rgb(var(--color-muted) / <alpha-value>)",
       },
       fontFamily: {
         display: ["var(--font-display)"],

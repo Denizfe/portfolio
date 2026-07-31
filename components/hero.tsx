@@ -29,7 +29,7 @@ export function Hero() {
             initial={{ opacity: 0, y: 10 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-5 inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-muted"
+            className="mb-5 inline-flex items-center gap-2 rounded-full border border-ink/10 bg-ink/5 px-3 py-1 text-xs text-muted"
           >
             <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-accent" />
             Hello, I&apos;m
@@ -79,7 +79,7 @@ export function Hero() {
               href="/DenizEfeKaracakaya_Resume.pdf"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 rounded-full border border-white/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-primary/50 hover:text-primary"
+              className="inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink transition-colors hover:border-primary/50 hover:text-primary"
             >
               <Download className="h-3.5 w-3.5" />
               Download CV
