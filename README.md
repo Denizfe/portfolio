@@ -23,7 +23,7 @@ ask and they can be built as a follow-up:
 - AI chat assistant trained on the portfolio content (needs a backend + API key)
 - Blog with MDX, syntax highlighting, and search
 - Command palette (⌘K), English/Turkish language switcher, visitor counter
-- Certifications modal gallery, project detail sub-pages
+- Project detail sub-pages
 
 ## Getting started
 
@@ -53,11 +53,13 @@ components/
   skills.tsx
   projects.tsx
   experience.tsx
+  certificates.tsx
   contact.tsx
   footer.tsx
   theme-provider.tsx
 lib/
   data.ts             # all editable content lives here
+  site.ts             # production URL, shared by layout/sitemap/robots
   utils.ts
 ```
 
@@ -66,7 +68,7 @@ lib/
 Everything text-based — name, projects, skills, experience — lives in
 `lib/data.ts`. Update that file rather than the components.
 
-Add your resume PDF at `public/Deniz-Efe-Karacakaya-CV.pdf` so the
+Add your resume PDF at `public/DenizEfeKaracakaya_Resume.pdf` so the
 "Download CV" buttons work, and update the GitHub/LinkedIn/Kaggle URLs in
 `lib/data.ts` to your real profiles.
 

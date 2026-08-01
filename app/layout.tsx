@@ -3,6 +3,7 @@ import { Space_Grotesk, Inter, JetBrains_Mono } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import { siteUrl } from "@/lib/site";
 import "./globals.css";
 
 const display = Space_Grotesk({
@@ -20,8 +21,6 @@ const mono = JetBrains_Mono({
   subsets: ["latin"],
   variable: "--font-mono",
 });
-
-const siteUrl = "https://denizefekaracakaya.dev";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

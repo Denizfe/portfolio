@@ -145,14 +145,14 @@ export const projects: Project[] = [
 
 export const experience = [
   {
-    period: "2025",
+    period: "June 2026 — Present",
     title: "Software Engineering Intern",
     org: "ASEE",
     description:
       "Contributed to production software systems, working across the stack on internal tooling and gaining hands-on experience with enterprise development workflows.",
   },
   {
-    period: "2024",
+    period: "2025",
     title: "AI Workshop Graduate",
     org: "BTK Akademi",
     description:

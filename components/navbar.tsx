@@ -60,7 +60,7 @@ export function Navbar() {
               onClick={() =>
                 setTheme(resolvedTheme === "dark" ? "light" : "dark")
               }
-              className="rounded-full p-2 text-muted transition-colors hover:bg-white/5 hover:text-ink"
+              className="rounded-full p-2 text-muted transition-colors hover:bg-ink/5 hover:text-ink"
             >
               {resolvedTheme === "dark" ? (
                 <Sun className="h-4 w-4" />
@@ -73,7 +73,7 @@ export function Navbar() {
             href="/DenizEfeKaracakaya_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
-            className="hidden rounded-full border border-white/10 px-4 py-1.5 text-sm text-ink transition-colors hover:border-primary/50 hover:text-primary sm:block"
+            className="hidden rounded-full border border-ink/10 px-4 py-1.5 text-sm text-ink transition-colors hover:border-primary/50 hover:text-primary sm:block"
           >
             Resume
           </a>
