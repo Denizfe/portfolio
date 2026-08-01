@@ -153,7 +153,7 @@ export const experience = [
   },
   {
     period: "2025",
-    title: "AI Workshop Graduate",
+    title: "AI Workshop",
     org: "BTK Akademi",
     description:
       "Completed an intensive applied AI workshop covering machine learning fundamentals, model training, and deployment practices.",
