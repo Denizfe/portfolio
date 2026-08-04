@@ -93,7 +93,7 @@ export const projects: Project[] = [
     summary:
       "A forecasting platform leveraging Prophet-based time-series models and analytics for predictive stock price insights.",
     stack: ["Python", "Prophet", "Streamlit", "Machine Learning"],
-    github: "https://github.com/Denizfe/SPCX-Forecast.git",
+    github: "https://github.com/Denizfe/forecast.git",
     featured: true,
   },
   {
