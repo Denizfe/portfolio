@@ -91,9 +91,9 @@ export const projects: Project[] = [
     slug: "forecast",
     name: "Forecast",
     summary:
-      "A forecasting platform leveraging time-series models and analytics for predictive insights.",
-    stack: ["Python", "Machine Learning", "Data Analysis"],
-    github: "https://github.com/Denizfe/forecast.git",
+      "A forecasting platform leveraging Prophet-based time-series models and analytics for predictive stock price insights.",
+    stack: ["Python", "Prophet", "Streamlit", "Machine Learning"],
+    github: "https://github.com/Denizfe/SPCX-Forecast.git",
     featured: true,
   },
   {
