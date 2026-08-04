@@ -79,6 +79,15 @@ export type Project = {
 
 export const projects: Project[] = [
   {
+    slug: "lionel",
+    name: "L.I.O.N.E.L",
+    summary:
+      "A local-first, voice-driven autonomous agent. Bilingual (English/Turkish), MCP-native, and designed to work with the network unplugged — ADR-driven architecture with policy-gated CI.",
+    stack: ["Python", "MCP", "gRPC", "OpenTelemetry", "GitHub Actions"],
+    github: "https://github.com/Denizfe/L.I.O.N.E.L.git",
+    featured: true,
+  },
+  {
     slug: "forecast",
     name: "Forecast",
     summary:
